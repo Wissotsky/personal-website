@@ -15,6 +15,7 @@
   <meta name="robots" content="noindex, nofollow" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="stylesheet" id="cf_styles-css" href="/cf500_main.css" />
+  <link rel="stylesheet" href="/main.css"/>
 
 
 </head>
@@ -66,7 +67,7 @@
               <div class="relative mb-10 md:m-0">
                 <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_522&utm_campaign=wissotsky.com"
                   target="_blank" rel="noopener noreferrer">
-                  <span class="cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat"></span>
+                  <span id="cloud" class="cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat" style="animation-delay: -.2s; animation-duration: .15s"></span>
                   <span
                     class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
                 </a>
@@ -151,6 +152,13 @@
         <script>(function () { function d() { var b = a.getElementById("cf-footer-item-ip"), c = a.getElementById("cf-footer-ip-reveal"); b && "classList" in b && (b.classList.remove("hidden"), c.addEventListener("click", function () { c.classList.add("hidden"); a.getElementById("cf-footer-ip").classList.remove("hidden") })) } var a = document; document.addEventListener && a.addEventListener("DOMContentLoaded", d) })();</script>
         <script>
           document.getElementById("time").innerHTML = new Date().toUTCString();
+          // when hovering over cloud element lerp scale to 1.1
+          document.getElementById('cloud').addEventListener('mouseover', function () {
+            document.getElementById('cloud').classList.add('jiggle-icon');
+          });
+          document.getElementById('cloud').addEventListener('mouseout', function () {
+            document.getElementById('cloud').classList.remove('jiggle-icon');
+          });
         </script>
       </div><!-- /.error-footer -->
 
