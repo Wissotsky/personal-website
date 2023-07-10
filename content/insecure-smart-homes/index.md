@@ -1,17 +1,21 @@
 +++
 
 title = 'Authentication Gap in ESPHome'
+description = 'Exploring the authentication gap in ESPHome and the smart homes left open to the internet'
+icon = 'file'
 
 +++
-> Preable: I have contacted the ESPHome developers with my findings a while ago, they were not interested in changing the lack of authentication by default.
 
-If youre reading this post its likely you have experimented with smarthome and iot stuff, or have at the very least thought about. Its also just as likely you care about the safety of your own home.
+> Preamble: I have contacted the ESPHome developers with my findings a while ago, they were not interested in changing the lack of authentication by default.
 
-[Smarthome minigame]
+If you're reading this post its likely you have experimented with smart home and iot stuff, or have at the very least thought about. Its also just as likely you care about the safety of your own home.
+
+![Smart home defense turret](smarthome-turret.jpg "Smart home defense turret")
 
 Despite that many smart home enthusiasts left their homes exposed to the internet, because authentication is disabled by default in ESPHome.
 
 [ESPHome](https://esphome.io/index.html) is a platform that DIY enthusiasts often use for their smart home projects. It allows you to use common microcontrollers like ESP32 to make your devices "smart".
+
 Additionally it makes managing configuration, versioning, controlling and automating devices much easier.
 
 ## MITRE ATT&CK
@@ -55,7 +59,7 @@ Admin dashboard:
 
 User Dashboard:
 
-- "https://oi.esphome.io/v2/www.js"
+- `https://oi.esphome.io/v2/www.js`
 
 MQTT:
 
@@ -70,9 +74,9 @@ If you have the infrastructure to monitor the letsencrypt certlog you can look o
 
 ## Abuse potential
 
-Imagine if during a ransomware attack the attackers took control over air conditioning and made the office unbearable by overheating or overcooling it. While it may seem insignificant in the grand scheme of things. In the moment the mental impact can be tremendous, potentially overshadowing the future organizational consequences of the ransomware attack itself during Incident Response
+![This is fine meme](this-is-fine.jpg "This is fine")
 
-[Fire dog meme]
+Imagine if during a ransomware attack the attackers took control over air conditioning and made the office unbearable by overheating or overcooling it. While it may seem insignificant in the grand scheme of things. In the moment the mental impact can be tremendous, potentially overshadowing the future organizational consequences of the ransomware attack itself during Incident Response
 
 ### Low skill
 
