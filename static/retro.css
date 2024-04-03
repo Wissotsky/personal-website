@@ -39,3 +39,12 @@ p.two {
 li {
   display: inline-block;
 }
+
+/* make images scale better on mobile */
+/* probably doesnt work well for vertical images but I will deal with it once I get there */
+img {
+  max-height: 24rem;
+  max-width: 100%;
+  object-fit: scale-down;
+  object-position: left top;
+}
