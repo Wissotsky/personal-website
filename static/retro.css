@@ -1,5 +1,5 @@
 /*
-from https://glitch.com/~minty-monotype
+based on https://glitch.com/~minty-monotype
 */
 body {
   background-color: #e9f4fa;
@@ -13,6 +13,7 @@ a:link {
   text-decoration: none;
   &:hover {
     border-bottom: 2px solid;
+  }
 }
 
 /* visited link */
@@ -34,10 +35,6 @@ a:active {
 p.two {
   border-style: solid;
   border-width: medium;
-}
-
-li {
-  display: inline-block;
 }
 
 /* make images scale better on mobile */
