@@ -7,14 +7,7 @@ body {
   font-family: "DM Mono", serif;
 }
 
-/* unvisited link */
-a:link {
-  color: #180581;
-  text-decoration: none;
-  &:hover {
-    border-bottom: 2px solid;
-  }
-}
+
 
 /* visited link */
 a:visited {
@@ -31,10 +24,25 @@ a:active {
   color: blue;
 }
 
+/* unvisited link */
+a:link {
+  color: #180581;
+  text-decoration: none;
+  &:hover {
+    border-bottom: 2px solid;
+  }
+}
+
 /* to use for nav with shadow */
 p.two {
   border-style: solid;
   border-width: medium;
+}
+
+/* make text not overly long */
+p {
+  max-inline-size: 66ch;
+  overflow-wrap: break-word;
 }
 
 /* make images scale better on mobile */
