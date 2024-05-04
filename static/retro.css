@@ -5,6 +5,8 @@ body {
   background-color: #e9f4fa;
   color: #058118;
   font-family: "DM Mono", serif;
+  margin: auto 2ch;
+  text-align: justify;
 }
 
 
