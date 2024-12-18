@@ -1,8 +1,10 @@
 +++
 
+date = 2023-07-02T12:12:05+02:00
 title = 'Authentication Gap in ESPHome'
 description = 'Exploring the authentication gap in ESPHome and the smart homes left open to the internet'
 icon = 'file'
+draft = false
 
 +++
 
